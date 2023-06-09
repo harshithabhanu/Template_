@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.gridcontainer {
+			height: 700px;
+			width: 800px;
+			background-color: black;
+			display: grid;
+			grid-template-columns: 300px 300px;
+			grid-template-rows: 200px 200px 200px;
+			justify-content: center;
+		}
+		.griditemone {
+			grid-column: 1/3;
+			transition: black 0.3s ease;
+		}
+		.griditemthree {
+			grid-row: 2/4;
+			grid-column: 2/3;
+		}
+		.grid-image {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: transform 0.3s;
+		}
+		.grid-image:hover {
+			transform: scale(0.80);
+		}
+	</style>
+</head>
+	<body>
+		<div class="gridcontainer">
+			<div class="griditemone"><img src="https://www.w3schools.com/howto/img_forest.jpg" class="grid-image"></div>
+			<div class="griditemtwo"><img src="https://www.w3schools.com/howto/img_5terre.jpg" class="grid-image"></div>
+			<div class="griditemthree"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="grid-image"></div>
+			<div class="griditemfour"><img src="https://www.w3schools.com/howto/img_nature.jpg" class="grid-image"></div>
+		</div>
+	</body>
+	</html>
